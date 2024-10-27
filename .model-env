@@ -1,0 +1,7 @@
+DB_HOST=localhost
+DB_NAME=empresa
+DB_PORT=5432
+DB_USER=teste
+DB_PASSWORD=12345678
+TEST_CONNECTION=Host=172.17.251.140;Port=5432;Database=postgres;Username=postgres;Password=12345678;Include Error Detail=true;
+
