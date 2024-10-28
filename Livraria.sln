@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
-		CI.yml = CI.yml
+		.github\workflows\ci.yml = .github\workflows\ci.yml
 		LICENSE = LICENSE
 		pull_request_template.md = pull_request_template.md
 		README.md = README.md
@@ -45,11 +45,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Livraria.Domain.Tests", "te
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Livraria.API", "src\Livraria.API\Livraria.API.csproj", "{05ED688D-45B7-4AA8-9A38-292ECB436DD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livraria.Database", "src\Livraria.Database\Livraria.Database.csproj", "{75A5C779-C424-48DE-91D9-C12CB73D296C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Livraria.Database", "src\Livraria.Database\Livraria.Database.csproj", "{75A5C779-C424-48DE-91D9-C12CB73D296C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livraria.IOC", "src\Livraria.IOC\Livraria.IOC.csproj", "{01CD047C-79A1-4176-8197-44A1C1A85AC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Livraria.IOC", "src\Livraria.IOC\Livraria.IOC.csproj", "{01CD047C-79A1-4176-8197-44A1C1A85AC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livraria.Database.Tests", "tests\Livraria.Database.Tests\Livraria.Database.Tests.csproj", "{B9459264-E695-4677-A30B-BF393442674E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Livraria.Database.Tests", "tests\Livraria.Database.Tests\Livraria.Database.Tests.csproj", "{B9459264-E695-4677-A30B-BF393442674E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
