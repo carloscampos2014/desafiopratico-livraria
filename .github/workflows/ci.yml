@@ -22,10 +22,13 @@ jobs:
           dotnet-version: '8.0.x' # Especifique a versão do .NET que você está usando
 
       - name: Restore dependencies
-        run: dotnet restore MinhaSolução.sln
+        run: dotnet restore Livraria.sln
 
       - name: Build
-        run: dotnet build MinhaSolução.sln --configuration Release --no-restore
+        run: dotnet build Livraria.sln --configuration Release --no-restore
 
       - name: Run tests
-        run: dotnet test MeuProjeto.Tests/MeuProjeto.Tests.csproj --configuration Release --no-build --verbosity normal
+        run: dotnet test tests/Livraria.Domain.Tests.csproj --configuration Release --no-build --verbosity normal
+
+      - name: Run tests
+        run: dotnet test tests/Livraria.Database.Tests.csproj --configuration Release --no-build --verbosity normal
