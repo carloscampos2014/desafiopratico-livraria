@@ -41,7 +41,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livraria.Domain.Contracts",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livraria.Domain", "src\Livraria.Domain\Livraria.Domain.csproj", "{DA48BB3A-4F11-4AC7-8472-50AF84286C26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livraria.Domain.Tests", "Livraria.Domain.Tests\Livraria.Domain.Tests.csproj", "{026A5F5F-6370-4044-96C8-37AC1B594BB6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livraria.Domain.Tests", "tests\Livraria.Domain.Tests\Livraria.Domain.Tests.csproj", "{026A5F5F-6370-4044-96C8-37AC1B594BB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livraria.API", "src\Livraria.API\Livraria.API.csproj", "{05ED688D-45B7-4AA8-9A38-292ECB436DD9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,10 @@ Global
 		{026A5F5F-6370-4044-96C8-37AC1B594BB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{026A5F5F-6370-4044-96C8-37AC1B594BB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{026A5F5F-6370-4044-96C8-37AC1B594BB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05ED688D-45B7-4AA8-9A38-292ECB436DD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05ED688D-45B7-4AA8-9A38-292ECB436DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05ED688D-45B7-4AA8-9A38-292ECB436DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05ED688D-45B7-4AA8-9A38-292ECB436DD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,6 +85,7 @@ Global
 		{12282C57-688B-4735-8B1A-05C6313E7DE0} = {1880E720-3E31-4D7A-8F0C-A5295342CC1A}
 		{DA48BB3A-4F11-4AC7-8472-50AF84286C26} = {1880E720-3E31-4D7A-8F0C-A5295342CC1A}
 		{026A5F5F-6370-4044-96C8-37AC1B594BB6} = {5522DAB5-6D3D-4BF0-9BA5-7356352230D9}
+		{05ED688D-45B7-4AA8-9A38-292ECB436DD9} = {B6F14FAB-535D-483F-A9B8-AE9AC7597153}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0A11274-3CEC-4740-AD26-94B3D3AD36BB}

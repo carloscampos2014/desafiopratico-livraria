@@ -1,4 +1,6 @@
-﻿namespace Livraria.Domain.Contracts.Models.Requests;
+﻿using Livraria.Domain.Contracts.Enums;
+
+namespace Livraria.Domain.Contracts.Models.Requests;
 
 public class BookRequest
 {
@@ -9,6 +11,8 @@ public class BookRequest
     public string Description { get; set; } = string.Empty;
 
     public int PublicationYear { get; set; } = DateTime.UtcNow.Year;
+
+    public GenreBook Genre { get; set; } = GenreBook.Adventure;
 
     public decimal Price { get; set; }
 

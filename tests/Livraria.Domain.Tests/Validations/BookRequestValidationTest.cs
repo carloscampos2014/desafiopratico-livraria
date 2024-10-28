@@ -35,15 +35,7 @@ public class BookRequestValidationTest
 
     public static IEnumerable<object[]> ReturnModels()
     {
-        var faker = new Faker<BookRequest>()
-            .RuleFor(r => r.Title, f => f.Random.Words(5))
-            .RuleFor(r => r.Author, f => f.Name.FullName())
-            .RuleFor(r => r.Description, f => f.Random.Words(20))
-            .RuleFor(r => r.PublicationYear, f => f.Random.Int(1930, DateTime.UtcNow.Year))
-            .RuleFor(r => r.Price, f => f.Random.Decimal(0.01m, 199.99m))
-            .RuleFor(r => r.Stock, f => f.Random.Int(0, 100));
-
-        var models = faker.Generate(10);
+        var models = ModelFaker.ListBookRequest(10);
         foreach (var model in models)
         {
             yield return new object[] { model };

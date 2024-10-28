@@ -9,4 +9,6 @@ public class BookResponse
     public string ErrorMessage { get; set; } = string.Empty;
 
     public Book Model { get; set; } = new Book();
+
+    public IEnumerable<Book> Models { get; set; } = new List<Book>();
 }
