@@ -2,7 +2,7 @@
 
 namespace Livraria.Domain.Contracts.Interfaces.Services;
 
-public interface IGetAllBooksService
+public interface IGetByIdBookService
 {
-    BookResponse Execute();
+    BookResponse Execute(Guid id);
 }

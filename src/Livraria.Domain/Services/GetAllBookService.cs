@@ -4,11 +4,11 @@ using Livraria.Domain.Contracts.Models.Responses;
 
 namespace Livraria.Domain.Services;
 
-public class GetAllBooksService : IGetAllBooksService
+public class GetAllBookService : IGetAllBookService
 {
     private readonly IBookRepository _bookRepository;
 
-    public GetAllBooksService(IBookRepository bookRepository)
+    public GetAllBookService(IBookRepository bookRepository)
     {
         _bookRepository = bookRepository;
     }

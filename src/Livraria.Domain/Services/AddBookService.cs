@@ -25,7 +25,7 @@ public class AddBookService : IAddBookService
             var resultValidation = _validator.Validate(request);
             if (!resultValidation.IsValid)
             {
-                throw new InvalidOperationException($"Dados Inválidos:{Environment.NewLine}{string.Join(Environment.NewLine, resultValidation.Errors.Select(error => error.ErrorMessage))}");
+                throw new InvalidOperationException($"Dados Inválidos:{string.Join(";", resultValidation.Errors.Select(error => error.ErrorMessage))}");
             }
 
             var model = new Book()

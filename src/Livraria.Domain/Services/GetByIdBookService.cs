@@ -4,7 +4,7 @@ using Livraria.Domain.Contracts.Models.Responses;
 
 namespace Livraria.Domain.Services;
 
-public class GetByIdBookService : IGetByIdService
+public class GetByIdBookService : IGetByIdBookService
 {
     private readonly IBookRepository _bookRepository;
 

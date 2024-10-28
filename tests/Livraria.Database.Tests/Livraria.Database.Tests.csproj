@@ -26,7 +26,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Livraria.Domain\Livraria.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Livraria.Database\Livraria.Database.csproj" />
+    <ProjectReference Include="..\..\src\Livraria.Domain.Contracts\Livraria.Domain.Contracts.csproj" />
   </ItemGroup>
 
   <ItemGroup>

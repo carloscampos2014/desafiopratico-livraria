@@ -7,7 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
-		.model-env = .model-env
 		LICENSE = LICENSE
 		pull_request_template.md = pull_request_template.md
 		README.md = README.md
@@ -37,13 +36,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.1-Api", "01.1-Api", "{B6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.1-API", "01.1-API", "{25D2D668-9C5E-4A52-A812-88418B4A9424}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livraria.Domain.Contracts", "src\Livraria.Domain.Contracts\Livraria.Domain.Contracts.csproj", "{12282C57-688B-4735-8B1A-05C6313E7DE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Livraria.Domain.Contracts", "src\Livraria.Domain.Contracts\Livraria.Domain.Contracts.csproj", "{12282C57-688B-4735-8B1A-05C6313E7DE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livraria.Domain", "src\Livraria.Domain\Livraria.Domain.csproj", "{DA48BB3A-4F11-4AC7-8472-50AF84286C26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Livraria.Domain", "src\Livraria.Domain\Livraria.Domain.csproj", "{DA48BB3A-4F11-4AC7-8472-50AF84286C26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livraria.Domain.Tests", "tests\Livraria.Domain.Tests\Livraria.Domain.Tests.csproj", "{026A5F5F-6370-4044-96C8-37AC1B594BB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Livraria.Domain.Tests", "tests\Livraria.Domain.Tests\Livraria.Domain.Tests.csproj", "{026A5F5F-6370-4044-96C8-37AC1B594BB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livraria.API", "src\Livraria.API\Livraria.API.csproj", "{05ED688D-45B7-4AA8-9A38-292ECB436DD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Livraria.API", "src\Livraria.API\Livraria.API.csproj", "{05ED688D-45B7-4AA8-9A38-292ECB436DD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livraria.Database", "src\Livraria.Database\Livraria.Database.csproj", "{75A5C779-C424-48DE-91D9-C12CB73D296C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livraria.IOC", "src\Livraria.IOC\Livraria.IOC.csproj", "{01CD047C-79A1-4176-8197-44A1C1A85AC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livraria.Database.Tests", "tests\Livraria.Database.Tests\Livraria.Database.Tests.csproj", "{B9459264-E695-4677-A30B-BF393442674E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +72,18 @@ Global
 		{05ED688D-45B7-4AA8-9A38-292ECB436DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05ED688D-45B7-4AA8-9A38-292ECB436DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05ED688D-45B7-4AA8-9A38-292ECB436DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75A5C779-C424-48DE-91D9-C12CB73D296C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75A5C779-C424-48DE-91D9-C12CB73D296C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75A5C779-C424-48DE-91D9-C12CB73D296C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75A5C779-C424-48DE-91D9-C12CB73D296C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01CD047C-79A1-4176-8197-44A1C1A85AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01CD047C-79A1-4176-8197-44A1C1A85AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01CD047C-79A1-4176-8197-44A1C1A85AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01CD047C-79A1-4176-8197-44A1C1A85AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9459264-E695-4677-A30B-BF393442674E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9459264-E695-4677-A30B-BF393442674E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9459264-E695-4677-A30B-BF393442674E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9459264-E695-4677-A30B-BF393442674E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +103,9 @@ Global
 		{DA48BB3A-4F11-4AC7-8472-50AF84286C26} = {1880E720-3E31-4D7A-8F0C-A5295342CC1A}
 		{026A5F5F-6370-4044-96C8-37AC1B594BB6} = {5522DAB5-6D3D-4BF0-9BA5-7356352230D9}
 		{05ED688D-45B7-4AA8-9A38-292ECB436DD9} = {B6F14FAB-535D-483F-A9B8-AE9AC7597153}
+		{75A5C779-C424-48DE-91D9-C12CB73D296C} = {190D0FF2-4E3C-4F86-AFC7-54540D1D7319}
+		{01CD047C-79A1-4176-8197-44A1C1A85AC2} = {A8F42B92-2968-4C2A-9DC5-E896758EE4B4}
+		{B9459264-E695-4677-A30B-BF393442674E} = {FA6BC51E-80C5-402C-BCD0-60CFAC817A90}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0A11274-3CEC-4740-AD26-94B3D3AD36BB}

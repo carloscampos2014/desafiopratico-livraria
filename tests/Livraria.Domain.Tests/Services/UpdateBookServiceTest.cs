@@ -37,7 +37,7 @@ public class UpdateBookServiceTest
         repositoryMock
             .Setup(x => x.Update(book))
             .Returns(true);
-        string errorMessage = $"Dados Inválidos:{Environment.NewLine}{string.Join(Environment.NewLine, resultValidation.Errors.Select(error => error.ErrorMessage))}";
+        string errorMessage = $"Dados Inválidos:{string.Join(";", resultValidation.Errors.Select(error => error.ErrorMessage))}";
         IUpdateBookService service = new UpdateBookService(validatorMock.Object, repositoryMock.Object);
 
         // Act

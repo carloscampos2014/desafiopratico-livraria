@@ -22,7 +22,7 @@ public class GetAllBooksServiceTest
         repositoryMock
             .Setup(x => x.GetAll())
             .Throws(new InvalidOperationException(expected.ErrorMessage));
-        IGetAllBooksService service = new GetAllBooksService(repositoryMock.Object);
+        IGetAllBookService service = new GetAllBookService(repositoryMock.Object);
 
         // Act
         var actual = service.Execute();
@@ -45,7 +45,7 @@ public class GetAllBooksServiceTest
         repositoryMock
             .Setup(x => x.GetAll())
             .Returns(expected.Models);
-        IGetAllBooksService service = new GetAllBooksService(repositoryMock.Object);
+        IGetAllBookService service = new GetAllBookService(repositoryMock.Object);
 
         // Act
         var actual = service.Execute();
@@ -69,7 +69,7 @@ public class GetAllBooksServiceTest
         repositoryMock
             .Setup(x => x.GetAll())
             .Returns(expected.Models);
-        IGetAllBooksService service = new GetAllBooksService(repositoryMock.Object);
+        IGetAllBookService service = new GetAllBookService(repositoryMock.Object);
 
         // Act
         var actual = service.Execute();

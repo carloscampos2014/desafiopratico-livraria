@@ -24,7 +24,7 @@ public class GetByIdBookServiceTest
         repositoryMock
             .Setup(x => x.GetById(model.Id))
             .Throws(new InvalidOperationException(expected.ErrorMessage));
-        IGetByIdService service = new GetByIdBookService(repositoryMock.Object);
+        IGetByIdBookService service = new GetByIdBookService(repositoryMock.Object);
 
         // Act
         var actual = service.Execute(model.Id);
@@ -50,7 +50,7 @@ public class GetByIdBookServiceTest
         repositoryMock
             .Setup(x => x.GetById(id))
             .Returns(model);
-        IGetByIdService service = new GetByIdBookService(repositoryMock.Object);
+        IGetByIdBookService service = new GetByIdBookService(repositoryMock.Object);
 
         // Act
         var actual = service.Execute(id);
@@ -73,7 +73,7 @@ public class GetByIdBookServiceTest
         repositoryMock
             .Setup(x => x.GetById(model.Id))
             .Returns(model);
-        IGetByIdService service = new GetByIdBookService(repositoryMock.Object);
+        IGetByIdBookService service = new GetByIdBookService(repositoryMock.Object);
 
         // Act
         var actual = service.Execute(model.Id);
