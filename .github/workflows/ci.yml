@@ -28,7 +28,7 @@ jobs:
         run: dotnet build Livraria.sln --configuration Release --no-restore
 
       - name: Run tests
-        run: dotnet test tests/Livraria.Domain.Tests.csproj --configuration Release --no-build --verbosity normal
+        run: dotnet test tests/Livraria.Domain.Tests/Livraria.Domain.Tests.csproj --configuration Release --no-build --verbosity normal
 
       - name: Run tests
-        run: dotnet test tests/Livraria.Database.Tests.csproj --configuration Release --no-build --verbosity normal
+        run: dotnet test tests/Livraria.Database.Tests/Livraria.Domain.Tests.csproj --configuration Release --no-build --verbosity normal
